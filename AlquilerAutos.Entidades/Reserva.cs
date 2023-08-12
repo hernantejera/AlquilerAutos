@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace AlquilerAutos.Entidades
 {
-    internal class Reserva
-    {
+    public class Reserva
+    {   
+        int IdReserva;
+        DateTime FechaEntrada { get; set; }
+        DateTime FechaSalida { get; set; }
+        double Total { get; set; }
+        int IdVehiculo { get; set; }
+        int IdUsuario { get; set; }
+
     }
 }

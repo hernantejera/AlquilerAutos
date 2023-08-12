@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace AlquilerAutos.Entidades
 {
-    internal class Pago
+    public class Pago
     {
+        int IdPago { get; set; }
+        double Monto { get; set; }
+        int IdReserva { get; set; }
+        int IdFormaDePago { get; set; }    
     }
 }

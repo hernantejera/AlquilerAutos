@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace AlquilerAutos.Entidades
 {
-    internal class TipoCombustible
-    {
+    public class TipoCombustible
+    {   
+        int Id { get; set; }
+        string IdDescripcion { get; set; }
     }
 }

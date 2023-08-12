@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace AlquilerAutos.Entidades
 {
     internal class FormaDePago
-    {
+    { int Id { get; set; }
+        string Descripcion { get; set; }    
     }
 }
