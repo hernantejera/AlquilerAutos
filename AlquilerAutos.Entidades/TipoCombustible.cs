@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 namespace AlquilerAutos.Entidades
 {
     public class TipoCombustible
-    {   
-        int Id { get; set; }
-        string IdDescripcion { get; set; }
+    {
+        public int Id { get; set; }
+        public string IdDescripcion { get; set; }
     }
 }

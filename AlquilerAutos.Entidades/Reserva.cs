@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 namespace AlquilerAutos.Entidades
 {
     public class Reserva
-    {   
-        int IdReserva;
-        DateTime FechaEntrada { get; set; }
-        DateTime FechaSalida { get; set; }
-        double Total { get; set; }
-        int IdVehiculo { get; set; }
-        int IdUsuario { get; set; }
+    {
+        public int IdReserva;
+        public DateTime FechaEntrada { get; set; }
+        public DateTime FechaSalida { get; set; }
+        public double Total { get; set; }
+        public int IdVehiculo { get; set; }
+        public int IdUsuario { get; set; }
 
     }
 }

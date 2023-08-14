@@ -7,19 +7,19 @@ using System.Threading.Tasks;
 namespace AlquilerAutos.Entidades
 {
     public class Usuario
-    {  
-        int idVeiculo;
-        string Nombre { get; set; }
-        string Apellido { get; set; }
-        DateTime FechaNacimiento { get; set; }
-        long Dni { get; set; }
-        string Nacionalidad { get; set; }
-        string Telefono { get; set; }
-        string Imeil { get; set; }
-        string CategoriaCarnet { get; set; }
-        DateTime FechaVencimientoCarnet { get; set; }
+    {
+        public int IdVehiculo;
+        public string Nombre { get; set; }
+        public string Apellido { get; set; }
+        public DateTime FechaNacimiento { get; set; }
+        public long Dni { get; set; }
+        public string Nacionalidad { get; set; }
+        public string Telefono { get; set; }
+        public string Email { get; set; }
+        public string CategoriaCarnet { get; set; }
+        public DateTime FechaVencimientoCarnet { get; set; }
 
 
-            
+
     }
 }

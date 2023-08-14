@@ -8,9 +8,9 @@ namespace AlquilerAutos.Entidades
 {
     public class Pago
     {
-        int IdPago { get; set; }
-        double Monto { get; set; }
-        int IdReserva { get; set; }
-        int IdFormaDePago { get; set; }    
+        public int IdPago { get; set; }
+        public double Monto { get; set; }
+        public int IdReserva { get; set; }
+        public int IdFormaDePago { get; set; }
     }
 }

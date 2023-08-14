@@ -8,16 +8,16 @@ namespace AlquilerAutos.Entidades
 {
     public class Vehiculo
     {   
-        int IdVehiculo { get; set; }
-        string Marca { get; set; }
-        string Modelo { get; set; }
-        int Anio { get; set; }
-        int CantidadPasajeron { get; set; }
-        int CantidadPuertas { get; set; }
-        int IdTipoCombustible { get; set; }
-        int CapasidadCombustible { get; set; }
-        double PrecioPorDia { get; set; }
-        int CapasidadBaul { get; set; }
+        public int IdVehiculo { get; set; }
+        public string Marca { get; set; }
+        public string Modelo { get; set; }
+        public int Anio { get; set; }
+        public int CantidadPasajeron { get; set; }
+        public int CantidadPuertas { get; set; }
+        public int IdTipoCombustible { get; set; }
+        public int CapacidadCombustible { get; set; }
+        public double PrecioPorDia { get; set; }
+        public int CapacidadBaul { get; set; }
 
     }
 }
