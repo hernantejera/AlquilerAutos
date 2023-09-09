@@ -15,5 +15,11 @@ namespace AlquilerAutos.Entidades
         public int IdVehiculo { get; set; }
         public int IdUsuario { get; set; }
 
+        public virtual Vehiculo Vehiculo { get; set; }
+        public virtual Usuario Usuario { get; set; }
+
+        public virtual List<Pago> Pagos { get; set; } = new List<Pago>();
+
+
     }
 }

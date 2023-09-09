@@ -9,6 +9,8 @@ namespace AlquilerAutos.Entidades
     public class TipoCombustible
     {
         public int Id { get; set; }
-        public string IdDescripcion { get; set; }
+        public string Descripcion { get; set; }
+
+        public virtual List<Vehiculo> Vehiculos { get; set; } = new List<Vehiculo>();
     }
 }

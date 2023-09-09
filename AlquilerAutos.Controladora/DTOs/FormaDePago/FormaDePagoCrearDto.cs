@@ -4,13 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AlquilerAutos.Entidades
+namespace AlquilerAutos.Controladora.DTOs.FormaDePago
 {
-    public class FormaDePago
+    public class FormaDePagoCrearDto
     {
-        public int Id { get; set; }
         public string Descripcion { get; set; }
-
-        public virtual List<Pago> Pagos { get; set; } = new List<Pago>();
     }
 }

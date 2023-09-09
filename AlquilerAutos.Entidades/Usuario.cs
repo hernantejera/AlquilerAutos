@@ -8,7 +8,7 @@ namespace AlquilerAutos.Entidades
 {
     public class Usuario
     {
-        public int IdVehiculo;
+        public int IdUsuario { get; set; }
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public DateTime FechaNacimiento { get; set; }
@@ -19,7 +19,7 @@ namespace AlquilerAutos.Entidades
         public string CategoriaCarnet { get; set; }
         public DateTime FechaVencimientoCarnet { get; set; }
 
-
+        public virtual List<Reserva> Reservas { get; set; } = new List<Reserva>();
 
     }
 }
