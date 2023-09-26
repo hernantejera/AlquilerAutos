@@ -24,6 +24,9 @@ namespace AlquilerAutos
 
             builder.Services.AddScoped<IFormaDePagoService, FormaDePagoService>();
             builder.Services.AddScoped<ITipoCombustibleService, TipoCombustibleService>();
+            builder.Services.AddScoped<VehiculoService, VehiculoService>();
+            builder.Services.AddScoped<UsuarioService, UsuarioService>();
+            builder.Services.AddScoped<ReservaService, ReservaService>();
 
             var app = builder.Build();
 

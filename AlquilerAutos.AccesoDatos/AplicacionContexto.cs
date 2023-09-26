@@ -5,18 +5,16 @@ namespace AlquilerAutos.AccesoDatos
 {
     public class AplicacionContexto : DbContext
     {
-
-
         public AplicacionContexto(DbContextOptions options) : base(options)
         {
         }
+
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Vehiculo> Vehiculo { get; set; }
         public DbSet<Reserva> Reservas { get; set; }
         public DbSet<Pago> Pagos { get; set; }
         public DbSet<FormaDePago> FormaDePagos { get; set; }
         public DbSet<TipoCombustible> TipoCombustibles { get; set; }
-        public object IntentarObtenerPorId { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -84,11 +82,9 @@ namespace AlquilerAutos.AccesoDatos
                 .IsRequired();
 
             modelBuilder.Entity<Vehiculo>()
-                .HasOne(c => c.TiposDeCombustibles)
+                .HasOne(c => c.TipoDeCombustible)
                 .WithMany(t => t.Vehiculos)
                 .HasForeignKey(c => c.IdTipoCombustible);
-
-
 
             modelBuilder.Entity<TipoCombustible>()
                 .HasKey(p => p.Id);
